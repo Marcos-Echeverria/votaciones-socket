@@ -1,3 +1,4 @@
+//server types
 export type CreatePollFields = {
   topic: string;
   votesPerVoter: number;
@@ -11,6 +12,20 @@ export type JoinPollFields = {
 
 export type RejoinPollFields = {
   pollID: string;
+  userID: string;
+  name: string;
+};
+
+//repository tipes
+export type CreatePollData = {
+  pollId: string;
+  topic: string;
+  votesPerVoter: number;
+  userID: string;
+};
+
+export type AddParticipantData = {
+  PollID: string;
   userID: string;
   name: string;
 };
