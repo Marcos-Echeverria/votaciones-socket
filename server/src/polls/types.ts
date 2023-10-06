@@ -18,14 +18,14 @@ export type RejoinPollFields = {
 
 //repository tipes
 export type CreatePollData = {
-  pollId: string;
+  pollID: string;
   topic: string;
   votesPerVoter: number;
   userID: string;
 };
 
 export type AddParticipantData = {
-  PollID: string;
+  pollID: string;
   userID: string;
   name: string;
 };
